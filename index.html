@@ -1,230 +1,294 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Coming Soon Template | PrepBootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
-
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Title-->
+  <title>Chris Jones | Home</title>
+  <!--Description-->
+  <meta name="description" content="Chris Jones is a creative developer based out of Dayton, Ohio. He works as a designer/developer on websites, mobile apps, video games, and VR/AR experiences.">
+  <!--Author tag - links to Google+, verifies author of post and ranks accordingly-->
+  <link rel=”author” href=”https://plus.google.com/u/0/113478727807219582032”/>
+  <!--Facebook post optimization-->
+  <meta property=”og:type” content=”blog”/>
+  <meta property=”og:image” content="/assets/img/logo.svg"/>
+  <!--Twitter card optimization-->
+  <meta name=”twitter:card” content=”summary”>
+  <meta name=”twitter:image” content="/assets/img/logo.svg"/>
+  <!--Stylesheet that links to Jekyll's CSS. Removed SASS autogeneration and am just using this static CSS for simplicity's sake-->
+  <link rel="stylesheet" href="/assets/css/jekyll.css">
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <!--Animate.css-->
+  <link rel="stylesheet" href="/assets/css/animate.css">
+  <!--Lightbox-->
+  <link rel="stylesheet" href="/assets/css/lightbox.css">
+  <!--Varela Round Google Font-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+  <!--Custom styles used throughout the rest of the site, used for header / footer-->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <!--Canonical tag for Google search results optimization-->
+  <link rel="canonical" href="http://chrisjonescreations.com/">
+  <!--RSS feed-->
+  <link rel="alternate" type="application/rss+xml" title="Chris Jones |" href="/feed.xml">
 </head>
 <body>
-
-<div class="container">
-
-
-<!-- Coming Soon - START -->
-
-<style>
-body {
-    background: url(background.png) no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-    
-    p {
-        color:white;
-    }
-    
-    h1 {
-        color:white;
-    }
-</style>
-
-<div class="bgcontainer" style="margin-top: 10px;">
-    <div class="col-md-12 text-center">
-        <h1>Coming Soon</h1>
-        <br />
-    </div>
-    <div style="width:500px; margin:0px auto;">
-        <img class="img-responsive" src="SundanceLogo.png">
-    </div>
-    <div class="col-md-2 hidden-xs"></div>
-    <div class="row">
-        
+    <header>
+<!--Top div for upp arrow smooth scroll-->
+<div id="top"></div>
+<!--Bootstrap navigation bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand navbar-link" href="/index" id="navbar-logo-brand"><img src="/assets/img/logo.svg"  alt="logo"></a>
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1" id="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav center-block">
+                <li role="presentation" class=""><a href="/index" class="navbar-link-offset text-white active">Home</a></li>
+                <li role="presentation" class="hidden-xs navbar-divider"><h4>&nbsp;&nbsp;|&nbsp;&nbsp;</h4></li>
+                <li role="presentation"><a href="/portfolio" class="navbar-link-offset text-white ">Portfolio</a></li>
+                <li class="hidden-xs" role="presentation" id="navbar-logo-nav">
+                    <a href="/index"><img src="/assets/img/logo.svg" alt="logo" id="navbar-logo"></a></li>
+                <li role="presentation"><a href="/blog" class="text-white navbar-link-offset ">Blog</a></li>
+                <li role="presentation" class="navbar-divider hidden-xs"><h4>&nbsp;&nbsp;|&nbsp;&nbsp;</h4></li>
+                <li role="presentation"><a href="/contact" class="text-white navbar-link-offset ">Contact</a></li>
+            </ul>
         </div>
     </div>
-    <br />
-    <br />
-    <div class="text-center">
-        <h1>Follow us</h1>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 text-center v-center" style="font-size: 39pt;">
-            <a href="#"><span class="avatar"><i class="fa fa-twitter" style="color:white;"></i></span></a>
-            <a href="#"><span class="avatar"><i class="fa fa-facebook" style="color:white;"></i></span></a>
-            <a href="#"><span class="avatar"><i class="fa fa-github" style="color:white;"></i></span></a>
-        </div>       
+</nav>
+    </header>
+        <div id="billboard">
+    <video autoplay loop muted class="fullscreen-bg-video">
+        <source src="/assets/img/placeholder.mp4" type="video/mp4">
+    </video>
+    <div class="container billboard-mid wow zoomIn">
+        <div class="row">
+            <div class="col-md-12" id="billboard-content">
+                  <!--Div to push content below sticky nav, so nothing is cut off-->
+                <div id="billboard-mid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-center spacing-bottom-sm">Hi, I'm Chris Jones! I am a</h3></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><img class="img-responsive center-block" src="/assets/img/developer.svg" alt="job titles" style="max-width:80%;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-center img-responsive spacing-top-sm">and I'd love to work with you to build something great.</h3></div>
+                    </div>
+                </div>
+                <a class="smoothScroll" href="#down-arrow"> <img class="img-responsive arrows wow pulse infinite" src="/assets/img/down-arrow.svg" alt="down arrow" id="down-arrow"></a>
+            </div>
+        </div>
     </div>
 </div>
+<div id="about" class="div-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12"><img class="img-circle img-responsive icon-lg center-block image-padded" src="assets/img/me.png" alt="chris jones"></div>
+            <div class="col-md-8">
+                <h2 class="small-heading-center">A bit more about myself...</h2>
+                <p>Being a graphic designer and a developer is the perfect one-two punch, as not only can I visualize a new experience, I also have the technical know-how to build it. From the first time I ever laid hands on a computer, I’ve had a growing obsession for technology. I grew up taking apart and fixing PCs, playing tons of retro games, and always trying to learn more. Even today I have more computers and servers in my apartment than I can count, am always working on a side project, bury myself in code, and am constantly teaching myself new things. I’ve taken my passion for computer hardware and software and combined it with my love of creating. I specialize primarily in web, 3D/games, and motion graphics/video work, but am also comfortable with more traditional print mediums. When I’m not working on a new project, I’m probably hosting LAN parties, getting my drone stuck in a tree, rocking out to some metal, or making some delicious vegan food. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="video-trailer-container">
+    <video id="video-trailer" class="img-responsive center-block" controls>
+        <source src="assets/img/placeholder.mp4" type="video/mp4"/>
+        Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+</div>
+<div class="div-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center spacing-bottom-sm wow fadeInUp" style="-moz-animation-delay:.5s; -webkit-animation-delay:.5s;">I'm skilled in many areas...</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><img class="img-responsive" src="assets/img/skills.png" alt="skill cloud"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="div-grey">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
 
-<link rel="stylesheet" type="text/css" href="/Content/font-awesome/css/font-awesome.min.css" />
+                <h2 class="text-center wow fadeInDown">And I specialize in...</h2></div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 spacing-top wow zoomIn">            <div class="row">
+            <img class="img-responsive icon-lg center-block spacing-bottom" src="assets/img/vr.svg" alt="virtual reality">
+            <h3 class="text-center uppercase">VR &amp; AR Experiences</h3></div></div>
+        <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 spacing-top wow zoomIn" style="-webkit-animation-delay:.5s; -moz-animation-delay:.5s;">             <div class="row">
+            <img class="img-responsive icon-lg center-block spacing-bottom" src="assets/img/games.svg" alt="games">
+            <h3 class="text-center uppercase ">3D &amp; 2D Games</h3></div></div>
 
-<!-- you need to include the shieldui css and js assets in order for the charts to work -->
-<link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/shieldui-all.min.css" />
-<link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
-<script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+        <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 spacing-top wow zoomIn" style="-webkit-animation-delay:1s;  -moz-animation-delay:1s;">
+            <div class="row"><img class="img-responsive icon-lg center-block spacing-bottom" src="assets/img/mobile.svg" alt="web development">
+                <h3 class="text-center uppercase">Web &amp; Mobile</h3></div></div>
+    </div>
+</div>
+<div class="div-blue">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center wow fadeInDown">Here's what I've been working on!</h2>
+            
+            <div class="col-md-12 wow slideInLeft spacing-top">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="/assets/img/blog-post/atrix-4g-lapdock-mobile-monitor/billboard.jpg">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2 class="small-heading-center"><a href="/blog-post/atrix-4g-lapdock-mobile-monitor" class="post-titles uppercase">Motorola Atrix 4G Lapdock - An Easy & Cheap Portable Monitor Solution</a></h2>
+                        <h4 class="small-heading-center">February 02, 2016</h4>
+                        <h2 class="small-heading-center">An introduction</h2>
+<p>I’ve had the need for a portable monitor for a while. While at school/work, using a single display feels extremely cramped. Even though my laptop has a 4K display, its still only 15 inches large and with display scaling turned on (because you definitely need it at this size) to even 175%, it still isn’t that much screen real estate.</p>
 
+
+                        <a class="btn btn-default fluid-text spacing-bottom-sm " href="/blog-post/atrix-4g-lapdock-mobile-monitor">View Full Post</a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <div class="div-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 wow zoomIn" style="-moz-animation-duration:1.5s; -webkit-animation-duration:1.5s;">
+                        <div class="row">
+                            <h2 class="text-center uppercase">Want to work with me? </h2>
+                            <h3 class="text-center">Have a look at my <a href="/assets/ChrisJonesResume.pdf" class="link-blue">resume </a> and let’s get in touch. </h3></div>                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="div-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 spacing-bottom">
+                <h2 class="text-center wow pulse" style="-webkit-animation-iteration-count: 2; -moz-animation-iteration-count: 2;
+                                                         -webkit-animation-delay: 2s;  -moz-animation-delay: 2s;">Connect with me!</h2></div>
+        </div>
+        <div class="row footer-mid">
+            <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0" id="social-background">
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3 social-icon-spacing-bottom-sm">
+                        <a href="mailto:0chrisjones0@gmail.com"><img class="img-responsive social-icon" src="/assets/img/email.svg" alt="email"></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="https://github.com/OChrisJonesO"><img class="img-responsive social-icon" src="/assets/img/github.svg" alt="github"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <a href="tel:4195819051"><img class="img-responsive social-icon-spacing-top2 social-icon" src="/assets/img/phone.svg" alt="phone"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 social-icon-spacing-top">
+                                <a href="https://www.linkedin.com/in/0chrisjones0"><img class="img-responsive social-icon" src="/assets/img/linkedin.svg" alt="linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-md-12"><img class="img-responsive social-icon-avatar" src="/assets/img/avatar.svg" alt="avatar"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="row">
+                            <div class="col-xs-12 social-icon-spacing-top2">
+                                <a href="https://dribbble.com/OChrisJonesO"><img class="img-responsive social-icon" src="/assets/img/dribbble.svg" alt="dribbble"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 social-icon-spacing-top">
+                                <a href="http://www.twitch.tv/ochrisjoneso"><img class="img-responsive social-icon" src="/assets/img/twitch.svg" alt="twitch"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3 social-icon-spacing-bottom-sm">
+                        <a href="https://twitter.com/OChrisJonesO"><img class="img-responsive social-icon" src="/assets/img/twitter.svg" alt="twitter" style="margin-top:30px"></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="https://www.youtube.com/channel/UCrloisSZ9aTNsa5ytMy6Kmw"><img class="img-responsive social-icon" src="/assets/img/youtube.svg" alt="youtube" style="margin-top:30px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-offset-2 col-md-2 col-md-offset-1 col-sm-1 col-sm-offset-0 hidden-xs hidden-sm" id="up-arrow">
+                <a class="smoothScroll" href="#top"> <img class="img-responsive arrows center-block" src="/assets/img/up-arrow.svg" alt="back to top"></a>
+                <p class="text-center spacing-top-sm"><a href="#top" class="smoothScroll link-white text-center back-to-top">Back to top</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center spacing-top">Chris Jones © 2015. All Rights Reserved.</h4>   
+                <div class="spacing-top-sm text-center">  
+                    <a href="//www.iubenda.com/privacy-policy/7790448" class="iubenda-black iubenda-embed text-center" title="Privacy Policy">Privacy Policy</a>
+                    <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                </div>     
+                <a class="hidden-md hidden-lg smoothScroll" href="#top"> <img class="img-responsive arrows spacing-top-sm center-block" src="/assets/img/up-arrow.svg" alt="back to top" width="100" height="100"></a>
+                <p class="hidden-md hidden-lg text-center spacing-top-sm"><a class="smoothScroll text-white text-center back-to-top" href="#top">Back to top</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/js/collapse.js"></script>
+<script src="/assets/js/lightbox.min.js"></script>
+<!--Initiates SmoothScroll for going to anchors-->
+<script>$(function() {
+    $(".smoothScroll").click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});</script>
+<!--Wow.JS for linking Animate.css to scrolling-->
+<script src="/assets/js/wow.min.js"></script>
+<!--Initiates WOW.js-->
+<script>
+    new WOW().init();
+</script>
+<!--Simple script for ensuring fullscreen video loops in chrome-->
 <script type="text/javascript">
-    jQuery(function ($) {
-        // the date of the release - for example the below will set the release date to 
-        // 1st of March (month is 0-based), 2100 at noon 12:00 o'clock
-        // var release_date = new Date(2100, 2, 1, 12, 0, 0);
-        // format is: new Date(year, month [, day, hour, minute, second, millisecond]);
-        // (note that the month is 0-based).
-
-        // for showcase purpose, we set the release date to be 10 days from the current time
-        var release_date = new Date();
-        release_date.setDate(release_date.getDate() + 10);
-
-        var release_unixtime_ms = release_date.getTime(),
-            total_days = Math.floor((release_unixtime_ms - (new Date()).getTime()) / (24 * 60 * 60 * 1000)),
-            update_timer = null,
-            progress_days,
-            progress_hours,
-            progress_mins,
-            progress_secs;
-
-        // define a function to initialize the progressbars
-        function init_progressbars() {
-            // set the width and height of each progressbar to the width of their container
-            $(".prg").each(function () {
-                $(this)
-                    .width($(this).parent().width())
-                    .height($(this).parent().width());
-            });
-
-            // initialize the progressbar widgets
-            progress_days = $("#progress_days").shieldProgressBar({
-                min: 0,
-                max: total_days,
-                value: total_days,
-                layout: "circular",
-                layoutOptions: {
-                    circular: {
-                        borderColor: "white",
-                        width: 30,
-                        borderWidth: 3,
-                        color: "#1E98E4",
-                        backgroundColor: "white"
-                    }
-                },
-                text: {
-                    enabled: true,
-                    template: '<span style="font-size:27px;color:white;">{0:n0} days</span> '
-                },
-                reversed: true
-            }).swidget();
-
-            progress_hours = $("#progress_hours").shieldProgressBar({
-                min: 0,
-                max: 24,
-                value: 24,
-                layout: "circular",
-                layoutOptions: {
-                    circular: {
-                        borderColor: "white",
-                        width: 23,
-                        borderWidth: 3,
-                        color: "#1E98E4",
-                        backgroundColor: "white"
-                    }
-                },
-                text: {
-                    enabled: true,
-                    template: '<span style="font-size:27px;color:white;">{0:n0} hours</span> '
-                },
-                reversed: true
-            }).swidget();
-
-            progress_mins = $("#progress_mins").shieldProgressBar({
-                min: 0,
-                max: 60,
-                value: 60,
-                layout: "circular",
-                layoutOptions: {
-                    circular: {
-                        borderColor: "white",
-                        width: 15,
-                        borderWidth: 3,
-                        color: "#1E98E4",
-                        backgroundColor: "white"
-                    }
-                },
-                text: {
-                    enabled: true,
-                    template: '<span style="font-size:27px;color:white;">{0:n0} min</span> '
-                },
-                reversed: true
-            }).swidget();
-
-            progress_secs = $("#progress_secs").shieldProgressBar({
-                min: 0,
-                max: 60,
-                value: 60,
-                layout: "circular",
-                layoutOptions: {
-                    circular: {
-                        borderColor: "white",
-                        width: 10,
-                        borderWidth: 3,
-                        color: "#1E98E4",
-                        backgroundColor: "white"
-                    }
-                },
-                text: {
-                    enabled: true,
-                    template: '<span style="font-size:27px;color:white;">{0:n0} sec</span> '
-                },
-                reversed: true
-            }).swidget();
-
-            // restart the update timer
-            clearInterval(update_timer);
-            update_timer = setInterval(update_progressbars, 300);
-        }
-
-        function update_progressbars() {
-            var total_remaining_seconds = Math.floor((release_unixtime_ms - (new Date()).getTime()) / 1000),
-                remaining_days = Math.floor(total_remaining_seconds / (24 * 60 * 60));
-
-            total_remaining_seconds = total_remaining_seconds % (24 * 60 * 60);
-            var remaining_hours = Math.floor(total_remaining_seconds / (60 * 60));
-
-            total_remaining_seconds = total_remaining_seconds % (60 * 60);
-            var remaining_mins = Math.floor(total_remaining_seconds / 60);
-            var remaining_secs = total_remaining_seconds % 60;
-
-            // update the progressbars if new values are different
-            if (remaining_days != progress_days.value()) {
-                progress_days.value(remaining_days);
-            }
-            if (remaining_hours != progress_hours.value()) {
-                progress_hours.value(remaining_hours);
-            }
-            if (remaining_mins != progress_mins.value()) {
-                progress_mins.value(remaining_mins);
-            }
-            if (remaining_secs != progress_secs.value()) {
-                progress_secs.value(remaining_secs);
-            }
-        }
-
-        // call this function whenever the window size changes
-        $(window).on("resize", init_progressbars);
-
-        // init the progressbars now
-        init_progressbars();
+    $('.fullscreen-bg-video').on('ended', function () {
+        this.load();
+        this.play();
     });
 </script>
-<!-- Coming Soon - END -->
-
-</div>
-
+<!--Set custom options for lightbox-->
+<script>
+    lightbox.option({
+        'resizeDuration': 400,
+        'wrapAround': true
+    })
+</script>
 </body>
 </html>
