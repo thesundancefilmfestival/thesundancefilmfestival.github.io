@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Title-->
-  <title>Motorola Atrix 4G Lapdock - An Easy & Cheap Portable Monitor Solution</title>
+  <title>Cheap Portable Monitor - Motorola Atrix 4G Lapdock</title>
   <!--Description-->
-  <meta name="description" content="An introductionI’ve had the need for a portable monitor for a while. While at school/work, using a single display feels extremely cramped. Even though my lap...">
+  <meta name="description" content="I’ve had the need for a portable monitor for a while. While at school/work, using a single display feels extremely cramped. Even though my laptop has a 4K di...">
   <!--Author tag - links to Google+, verifies author of post and ranks accordingly-->
   <link rel=”author” href=”https://plus.google.com/u/0/113478727807219582032”/>
   <!--Facebook post optimization-->
@@ -32,6 +32,9 @@
   <link rel="canonical" href="http://chrisjonescreations.com/blog-post/atrix-4g-lapdock-mobile-monitor">
   <!--RSS feed-->
   <link rel="alternate" type="application/rss+xml" title="Chris Jones |" href="/feed.xml">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -66,7 +69,7 @@
             <div class="col-md-12" id="billboard-content">
                 <div id="billboard-mid">
                     <header class="post-header">
-                        <h1 class="post-title uppercase" itemprop="name headline">Motorola Atrix 4G Lapdock - An Easy & Cheap Portable Monitor Solution</h1>
+                        <h1 class="post-title uppercase" itemprop="name headline">Cheap Portable Monitor - Motorola Atrix 4G Lapdock</h1>
                         <h4>A 12 inch, 720p display with a built in stand and USB hub. For $50.</h4>
                         <p class="post-meta text-blue"><time datetime="2016-02-04T20:04:46+00:00" itemprop="datePublished">Last updated: Feb 4, 2016</time> / Posted by: <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Chris Jones</span></span></p>
                     </header>
@@ -82,8 +85,7 @@
             <div class="col-md-12">
                 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
                     <div class="post-content" itemprop="articleBody">
-                        <h2 class="small-heading-center">An introduction</h2>
-<p>I’ve had the need for a portable monitor for a while. While at school/work, using a single display feels extremely cramped. Even though my laptop has a 4K display, its still only 15 inches large and with display scaling turned on (because you definitely need it at this size) to even 175%, it still isn’t that much screen real estate.</p>
+                        <p>I’ve had the need for a portable monitor for a while. While at school/work, using a single display feels extremely cramped. Even though my laptop has a 4K display, its still only 15 inches large and with display scaling turned on (because you definitely need it at this size) to even 175%, it still isn’t that much screen real estate.</p>
 
 <p>For reference, I’m used to working with this much screen real estate at my desk:</p>
 
@@ -212,7 +214,6 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
 
     <div class="div-white">
     <div class="container">
-        <div class="row">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-12 wow zoomIn" style="-moz-animation-duration:1.5s; -webkit-animation-duration:1.5s;">
@@ -223,8 +224,7 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
             </div>
         </div>
     </div>
-</div>
-<footer class="div-grey">
+<footer class="div-grey-flat">
     <div class="container">
         <div class="row">
             <div class="col-md-12 spacing-bottom">
@@ -338,5 +338,27 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
         'wrapAround': true
     })
 </script>
+   <script type="text/javascript">
+    <!--Skills cloud hover-->
+  $('.tile')
+    // tile mouse actions
+    .on('mouseover', function(){
+      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+    })
+    .on('mouseout', function(){
+      $(this).children('.photo').css({'transform': 'scale(1)'});
+    })
+    .on('mousemove', function(e){
+      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+    // tiles set up
+    .each(function(){
+      $(this)
+        // add a photo container
+        .append('<div class="photo"></div>')
+        // set up a background image for each tile based on data-image attribute
+        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+    })
+  </script>
 </body>
 </html>

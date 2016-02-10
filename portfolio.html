@@ -32,6 +32,9 @@
   <link rel="canonical" href="http://chrisjonescreations.com/portfolio">
   <!--RSS feed-->
   <link rel="alternate" type="application/rss+xml" title="Chris Jones |" href="/feed.xml">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -85,8 +88,9 @@
                 <h4>Date: February 4, 2016</h4></div>
         </div>
     </div>
-    <div class="div-blue" style="background-color:#ffc850 !important;">
+    <div style="background-color:#ffc850 !important; padding-top: 100px;padding-bottom: 100px;">
         <div class="container">
+            <div class="row">
             <div class="col-md-12">
                 <div class="row">
                     <div class="heading-featured"><span class="span-yellow">Concept</span></div>
@@ -97,11 +101,13 @@
             </div>
         </div>
     </div>
-    <div class="div-grey" style="background-color:#15172f !important;">
+    </div>
+    <div style="background-color:#15172f !important; padding-top: 100px;padding-bottom: 100px;">
         <div class="container">
-            <div class="row">
+               <div class="row">
                 <div class="col-md-12">
-                    <div class="heading-featured spacing-bottom-sm"><span class="span-blue">Sketches &amp; Wireframes</span></div>
+                    <div class="row">
+                    <div class="heading-featured spacing-bottom-sm"><span class="span-blue">Sketches</span></div>
                     <div class="col-md-4 col-sm-4">
                         <div class="img-interactive-bg">
                             <a href="/assets/img/portfolio/steam-commercial/sketches.jpg" data-lightbox="assets">
@@ -124,13 +130,11 @@
                             </a>
                         </div>                 
                     </div>
-                </div>
             </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading-featured spacing-top spacing-bottom-sm"><span class="span-blue">Design Assets</span></div>
-                    <div>
+               <div class="row">
+                <div class="col-md-12">           
+                     <div class="row">
+                        <div class="heading-featured spacing-top spacing-bottom-sm"><span class="span-blue">Design Assets</span></div>
                         <div class="col-sm-6">
                             <h3>Illustrations </h3>      
                             <div class="img-interactive-bg">
@@ -158,8 +162,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 spacing-bottom-lg">
+                                </div>
+                <div class="row spacing-bottom-lg">
+                    <div class="col-md-12">
+                       <div class="row">
                         <div class="heading-featured spacing-top spacing-bottom-sm"><span class="span-blue">Storyboard</span></div>
                         <!--Start Image Interactive + Lightbox-->
                         <div class="col-lg-3 col-md-4 col-sm-6">
@@ -257,14 +263,13 @@
                                 </a>
                             </div>  
                         </div>  
-                        
-
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="div-blue" style="background-color:#ffc850 !important;">
+        </div>
+    <div style="background-color:#ffc850 !important; padding-top: 100px;padding-bottom: 100px;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -472,7 +477,6 @@
 
     <div class="div-white">
     <div class="container">
-        <div class="row">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-12 wow zoomIn" style="-moz-animation-duration:1.5s; -webkit-animation-duration:1.5s;">
@@ -483,8 +487,7 @@
             </div>
         </div>
     </div>
-</div>
-<footer class="div-grey">
+<footer class="div-grey-flat">
     <div class="container">
         <div class="row">
             <div class="col-md-12 spacing-bottom">
@@ -598,5 +601,27 @@
         'wrapAround': true
     })
 </script>
+   <script type="text/javascript">
+    <!--Skills cloud hover-->
+  $('.tile')
+    // tile mouse actions
+    .on('mouseover', function(){
+      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+    })
+    .on('mouseout', function(){
+      $(this).children('.photo').css({'transform': 'scale(1)'});
+    })
+    .on('mousemove', function(e){
+      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+    // tiles set up
+    .each(function(){
+      $(this)
+        // add a photo container
+        .append('<div class="photo"></div>')
+        // set up a background image for each tile based on data-image attribute
+        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+    })
+  </script>
 </body>
 </html>

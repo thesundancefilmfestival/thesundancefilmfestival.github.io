@@ -32,6 +32,9 @@
   <link rel="canonical" href="http://chrisjonescreations.com/">
   <!--RSS feed-->
   <link rel="alternate" type="application/rss+xml" title="Chris Jones |" href="/feed.xml">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -61,26 +64,34 @@
     </header>
         <div id="billboard">
     <video autoplay loop muted class="fullscreen-bg-video">
-        <source src="/assets/img/placeholder.mp4" type="video/mp4">
+        <source src="/assets/img/background.mp4" type="video/mp4">
+        <source src="/assets/img/background.ogv" type="video/ogg">
+        <source src="/assets/img/background.webm" type="video/webm">
     </video>
     <div class="container billboard-mid wow zoomIn">
         <div class="row">
             <div class="col-md-12" id="billboard-content">
-                  <!--Div to push content below sticky nav, so nothing is cut off-->
-                <div id="billboard-mid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="text-center spacing-bottom-sm">Hi, I'm Chris Jones! I am a</h3></div>
+                <div class="row">
+                    <div id="billboard-mid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <h3 class="text-center spacing-bottom-sm">Hi, I'm Chris Jones! I am a</h3></div>
+                            </div>   
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <img class="img-responsive center-block" src="/assets/img/title.gif" alt="job titles" style="max-width:80%;"></div>
+                            </div></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <h3 class="text-center img-responsive spacing-top-sm">and I'd love to work with you to build something great.</h3></div>
+                            </div></div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12"><img class="img-responsive center-block" src="/assets/img/developer.svg" alt="job titles" style="max-width:80%;"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="text-center img-responsive spacing-top-sm">and I'd love to work with you to build something great.</h3></div>
-                    </div>
+                    <a class="smoothScroll" href="#down-arrow"> <img class="img-responsive arrows wow pulse infinite" src="/assets/img/down-arrow.svg" alt="down arrow" id="down-arrow"></a>
                 </div>
-                <a class="smoothScroll" href="#down-arrow"> <img class="img-responsive arrows wow pulse infinite" src="/assets/img/down-arrow.svg" alt="down arrow" id="down-arrow"></a>
             </div>
         </div>
     </div>
@@ -103,7 +114,7 @@
     </video>
 </div>
 <div class="div-blue">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
@@ -111,7 +122,9 @@
                         <h2 class="text-center spacing-bottom-sm wow fadeInUp" style="-moz-animation-delay:.5s; -webkit-animation-delay:.5s;">I'm skilled in many areas...</h2></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12"><img class="img-responsive" src="assets/img/skills.png" alt="skill cloud"></div>
+                    <div class="tiles">
+                        <div class="tile" data-scale="1.1" data-image="assets/img/skills.png"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,21 +132,22 @@
 </div>
 <div class="div-grey">
     <div class="container">
-        <div class="col-md-12">
-            <div class="row">
-
-                <h2 class="text-center wow fadeInDown">And I specialize in...</h2></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <h2 class="text-center wow fadeInDown">And I specialize in...</h2></div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 spacing-top wow zoomIn">            <div class="row">
+                <img class="img-responsive icon-lg center-block spacing-bottom img-spacing" src="assets/img/vr.svg" alt="virtual reality">
+                <h3 class="text-center uppercase">VR &amp; AR Experiences</h3></div></div>
+            <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 spacing-top wow zoomIn " style="-webkit-animation-delay:.5s; -moz-animation-delay:.5s;">             
+                <div class="row">
+                    <img class="img-responsive icon-lg center-block spacing-bottom img-spacing" src="assets/img/games.svg" alt="games">
+                    <h3 class="text-center uppercase ">3D &amp; 2D Games</h3></div></div>
+            <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 spacing-top wow zoomIn" style="-webkit-animation-delay:1s;  -moz-animation-delay:1s;">
+                <div class="row"><img class="img-responsive icon-lg center-block spacing-bottom img-spacing" src="assets/img/mobile.svg" alt="web development">
+                    <h3 class="text-center uppercase">Web &amp; Mobile</h3></div></div>
         </div>
-        <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 spacing-top wow zoomIn">            <div class="row">
-            <img class="img-responsive icon-lg center-block spacing-bottom" src="assets/img/vr.svg" alt="virtual reality">
-            <h3 class="text-center uppercase">VR &amp; AR Experiences</h3></div></div>
-        <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 spacing-top wow zoomIn" style="-webkit-animation-delay:.5s; -moz-animation-delay:.5s;">             <div class="row">
-            <img class="img-responsive icon-lg center-block spacing-bottom" src="assets/img/games.svg" alt="games">
-            <h3 class="text-center uppercase ">3D &amp; 2D Games</h3></div></div>
-
-        <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 spacing-top wow zoomIn" style="-webkit-animation-delay:1s;  -moz-animation-delay:1s;">
-            <div class="row"><img class="img-responsive icon-lg center-block spacing-bottom" src="assets/img/mobile.svg" alt="web development">
-                <h3 class="text-center uppercase">Web &amp; Mobile</h3></div></div>
     </div>
 </div>
 <div class="div-blue">
@@ -144,13 +158,12 @@
             <div class="col-md-12 wow slideInLeft spacing-top">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="/assets/img/blog-post/atrix-4g-lapdock-mobile-monitor/billboard.jpg">
+                        <img src="/assets/img/blog-post/atrix-4g-lapdock-mobile-monitor/thumbnail.jpg">
                     </div>
                     <div class="col-sm-8">
-                        <h2 class="small-heading-center"><a href="/blog-post/atrix-4g-lapdock-mobile-monitor" class="post-titles uppercase">Motorola Atrix 4G Lapdock - An Easy & Cheap Portable Monitor Solution</a></h2>
+                        <h2 class="small-heading-center"><a href="/blog-post/atrix-4g-lapdock-mobile-monitor" class="post-titles uppercase">Cheap Portable Monitor - Motorola Atrix 4G Lapdock</a></h2>
                         <h4 class="small-heading-center">February 02, 2016</h4>
-                        <h2 class="small-heading-center">An introduction</h2>
-<p>I’ve had the need for a portable monitor for a while. While at school/work, using a single display feels extremely cramped. Even though my laptop has a 4K display, its still only 15 inches large and with display scaling turned on (because you definitely need it at this size) to even 175%, it still isn’t that much screen real estate.</p>
+                        <p>I’ve had the need for a portable monitor for a while. While at school/work, using a single display feels extremely cramped. Even though my laptop has a 4K display, its still only 15 inches large and with display scaling turned on (because you definitely need it at this size) to even 175%, it still isn’t that much screen real estate.</p>
 
 
                         <a class="btn btn-default fluid-text spacing-bottom-sm " href="/blog-post/atrix-4g-lapdock-mobile-monitor">View Full Post</a>
@@ -164,7 +177,6 @@
 </div>
     <div class="div-white">
     <div class="container">
-        <div class="row">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-12 wow zoomIn" style="-moz-animation-duration:1.5s; -webkit-animation-duration:1.5s;">
@@ -175,8 +187,7 @@
             </div>
         </div>
     </div>
-</div>
-<footer class="div-grey">
+<footer class="div-grey-flat">
     <div class="container">
         <div class="row">
             <div class="col-md-12 spacing-bottom">
@@ -290,5 +301,27 @@
         'wrapAround': true
     })
 </script>
+   <script type="text/javascript">
+    <!--Skills cloud hover-->
+  $('.tile')
+    // tile mouse actions
+    .on('mouseover', function(){
+      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+    })
+    .on('mouseout', function(){
+      $(this).children('.photo').css({'transform': 'scale(1)'});
+    })
+    .on('mousemove', function(e){
+      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+    // tiles set up
+    .each(function(){
+      $(this)
+        // add a photo container
+        .append('<div class="photo"></div>')
+        // set up a background image for each tile based on data-image attribute
+        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+    })
+  </script>
 </body>
 </html>
