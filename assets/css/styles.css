@@ -53,14 +53,14 @@ h1 {
 }
 @media (max-width: 767px) {
 #billboard {
-    background-image: url("/assets/img/background.jpg");
+    background-image: url("/assets/img/photo1.jpg");
     background-position:  center;
     background-size: cover;
     background-repeat: no-repeat;}}
 @media (max-height: 480px) {
 #billboard {
     height:450px;
-    background-image: url("/assets/img/background.jpg");
+    background-image: url("/assets/img/photo1.jpg");
     background-position:  center;
     background-size: cover;
     background-repeat: no-repeat;}}
