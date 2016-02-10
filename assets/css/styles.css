@@ -53,10 +53,17 @@ h1 {
 }
 @media (max-width: 767px) {
 #billboard {
-  background-color:red;}}
+    background-image: url("/assets/img/background.jpg");
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;}}
 @media (max-height: 480px) {
 #billboard {
-    height: 450px; } }
+    height:450px;
+    background-image: url("/assets/img/background.jpg");
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;}}
 .fullscreen-bg-video {
   position: fixed;
   top: 50%; left: 50%;
