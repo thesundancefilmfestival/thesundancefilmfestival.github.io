@@ -1,0 +1,7 @@
++ make blog bloggier
++ title animation
++ skill cloud svg shift
++ low poly? gradient?
++ bugs: large footer for sm design assets sm view / portfolio piece container edge/ff: home - scroll-right portfolio - scroll-right blogpost - scroll-right
++ css shadow
+
