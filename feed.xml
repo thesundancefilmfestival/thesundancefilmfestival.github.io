@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chris Jones |</title>
+    <title>Chris Jones /</title>
     <description>Chris Jones is a creative developer based out of Dayton, Ohio. He works as a designer/developer on websites, mobile apps, video games, and VR/AR experiences.</description>
     <link>http://chrisjonescreations.com/</link>
     <atom:link href="http://chrisjonescreations.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 11 Feb 2016 18:01:42 +0000</pubDate>
-    <lastBuildDate>Thu, 11 Feb 2016 18:01:42 +0000</lastBuildDate>
-    <generator>Jekyll v3.1.0</generator>
+    <pubDate>Wed, 24 Feb 2016 02:31:38 +0000</pubDate>
+    <lastBuildDate>Wed, 24 Feb 2016 02:31:38 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Run Steam Big Picture Mode in 4k</title>
+        <description>&lt;p&gt;For reasons left unknown, Valve’s Steam Big Picture mode (UI for running Steam on a TV) only allows you to set the resolution up to 1920x1080. It’s February of 2016, and Big Picture mode still only runs at a maximum of 1080p.&lt;/p&gt;
+
+&lt;p&gt;Yes, while according to the &lt;a class=&quot;link-grey&quot; target=&quot;_blank&quot; href=&quot;http://store.steampowered.com/hwsurvey&quot;&gt;Steam Hardware Survey&lt;/a&gt; the vast majority of users are still using 1080p displays, 4K monitors / TV’s have come done in price dramatically, and 1440p displays are also very popular. If you have one of these displays, you’ll find yourself with a blurry big picture mode experience.&lt;/p&gt;
+
+&lt;p&gt;While you can’t manually set any display resolution higher than 1920x1080 inside of Steam’s Big Picture menu, there is a simple workaround. If you’re on Windows and you want to change it to your native resolution you just have to launch steam with the launch option “-fulldesktopres.”&lt;/p&gt;
+&lt;hr class=&quot;spacing-both&quot; /&gt;
+
+&lt;h2&gt;The Solution&lt;/h2&gt;
+&lt;p&gt;To do this, simply:&lt;/p&gt;
+
+&lt;p&gt;1) Exit steam&lt;/p&gt;
+
+&lt;p&gt;2) Right click the steam &lt;strong&gt;shortcut&lt;/strong&gt; (either on your desktop, or wherever you usually launch steam from)&lt;/p&gt;
+
+&lt;p&gt;3) In the “Target:” field add “-fulldesktopres” to the end. It should read like this:&lt;/p&gt;
+&lt;div class=&quot;specs spacing-both-sm&quot;&gt;&quot;C:\Program Files (x86)\Steam\Steam.exe&quot; -fulldesktopres&lt;/div&gt;
+
+&lt;p&gt;4) Re-launch steam in big picture mode.&lt;/p&gt;
+
+&lt;p&gt;Voila! It will now be running at the native resolutiono of your desktop, whether that’s 1440p, 2k, 4k, or any other resolution. Unfortunately however, this won’t make Ultrawide 21:9 users any happier, as it will still limit itself to 16:9 for some reason.&lt;/p&gt;
+
+&lt;p&gt;If you have Steam set to auto-open in big picture mode every time you boot Windows and want to apply this fix, it can be done with a registry edit.
+Open regedit and put this command (-fulldesktopres) into the registry key at&lt;/p&gt;
+&lt;div class=&quot;specs spacing-both-sm&quot;&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\Steam&lt;/div&gt;
+
+&lt;p&gt;Enjoy the screenshots below showing the difference between native 4K and 1080p upscaled to 4K. No more blurry big picture.&lt;/p&gt;
+
+&lt;div class=&quot;img-gallery&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-12&quot;&gt;
+                                &lt;div class=&quot;col-md-12&quot;&gt;
+
+&lt;div class=&quot;col-sm-6&quot;&gt;
+&lt;div class=&quot;img-interactive-bg&quot;&gt;
+&lt;a href=&quot;/assets/img/blog-post/big-picture-4k/4k.jpg&quot; data-lightbox=&quot;atrix-4g&quot;&gt;
+&lt;img class=&quot;img-responsive center-block img-interactive&quot; src=&quot;/assets/img/blog-post/big-picture-4K/4k.jpg&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+&lt;div class=&quot;img-interactive-bg&quot;&gt;
+&lt;a href=&quot;/assets/img/blog-post/big-picture-4k/1080p.jpg&quot; data-lightbox=&quot;atrix-4g&quot;&gt;
+&lt;img class=&quot;img-responsive center-block  img-interactive&quot; src=&quot;/assets/img/blog-post/big-picture-4k/1080p.jpg&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 24 Feb 2016 01:23:46 +0000</pubDate>
+        <link>http://chrisjonescreations.com/blog-post/big-picture-4k</link>
+        <guid isPermaLink="true">http://chrisjonescreations.com/blog-post/big-picture-4k</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Atrix 4G Lapdock - Portable Monitor</title>

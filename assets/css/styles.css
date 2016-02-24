@@ -1,7 +1,8 @@
 body {
   font-family: 'Varela Round';
   color: white; 
-  background-color:#404041;}
+  background-color:#404041;
+  line-height: 25px;}
 h1 {
   font-size: 36px; }
 #navbar-center {
